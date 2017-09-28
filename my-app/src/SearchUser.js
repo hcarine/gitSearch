@@ -12,20 +12,16 @@ class SearchUser extends Component {
   }
 
   handleClick( event ){
-    //debugger
+    var that= this
     let value = event.currentTarget.value
     clearTimeout( this.state.timeOut )
     var newTime = setTimeout(function () {
-       searchUser( value )
-
+       searchUser( value, that.props.onChange )
      }, 500)
-
 
     this.setState({
       timeOut: newTime
     })
-    // console.log(event.currentTarget.value)
-
   }
  
   render() {
