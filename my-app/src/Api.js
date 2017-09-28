@@ -1,12 +1,12 @@
-export function searchUser(value, callback){
-  /*if(value){
+export function searchUser( value, callback ){
+  if(value){
     let searchProfile = 'https://api.github.com/users/' + value
     fetch( searchProfile )
       .then(blob => blob.json())
       .then(data => callback(data))
-  }*/
+  }
 
-  var mockData= {
+  /*var mockData= {
     "login": "hc",
     "id": 94355,
     "avatar_url": "https://avatars1.githubusercontent.com/u/94355?v=4",
@@ -38,16 +38,16 @@ export function searchUser(value, callback){
     "created_at": "2009-06-11T14:12:01Z",
     "updated_at": "2017-09-08T05:28:02Z"
   }
-  callback(mockData)
+  callback(mockData)*/
 }
 
 export function searchRepositories( value, callback ){
-  /*let searchProfile = 'https://api.github.com/users/' + value + '/repos'
+  let searchProfile = 'https://api.github.com/users/' + value + '/repos'
     fetch( searchProfile )
       .then(blob => blob.json())
       .then(data => callback(data))
-*/
-  var mockData = [
+
+  /*var mockData = [
   {
       "id": 104625935,
       "name": "aiomqtt",
@@ -850,6 +850,6 @@ export function searchRepositories( value, callback ){
       "default_branch": "master"
     }
   ]
-  callback(mockData)
+  callback(mockData)*/
 
 }
