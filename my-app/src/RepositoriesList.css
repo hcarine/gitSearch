@@ -1,0 +1,20 @@
+.subtitle{
+	display: block;
+}
+.item-inner{
+	display: inline-block;
+    width: 30%;
+    border-bottom: 1px solid;
+    padding: 10px;
+    border-right: 1px solid gray;
+    overflow-wrap: 
+}
+.legend{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+h2{
+	text-overflow: ellipsis;
+    word-wrap: break-word;
+}
